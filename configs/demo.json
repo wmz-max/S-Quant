@@ -1,0 +1,8 @@
+{
+  "block_size": 8,
+  "seed_bits": 6,
+  "group_size": 8,
+  "energy_threshold": 0.9,
+  "min_bases": 2,
+  "max_bases": 8
+}

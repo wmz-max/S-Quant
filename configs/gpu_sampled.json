@@ -1,0 +1,13 @@
+{
+  "block_size": 16,
+  "seed_bits": 16,
+  "group_size": 32,
+  "energy_threshold": 0.9,
+  "max_bases": 16,
+  "seed_budget": 4096,
+  "seed_chunk": 128,
+  "block_chunk": 256,
+  "cache_mb": 512,
+  "device": "cuda",
+  "strict_threshold": true
+}

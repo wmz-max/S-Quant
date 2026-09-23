@@ -1,0 +1,11 @@
+{
+  "block_size": 16,
+  "seed_bits": 8,
+  "group_size": 32,
+  "energy_threshold": 0.9,
+  "max_bases": 16,
+  "seed_chunk": 64,
+  "block_chunk": 256,
+  "cache_mb": 128,
+  "strict_threshold": true
+}
