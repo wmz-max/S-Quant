@@ -32,7 +32,6 @@ CUDA_VISIBLE_DEVICES=0,1 SQUANT_EVAL_DEVICE=auto \
   bash scripts/run_gpu_pipeline.sh /path/to/model results/experiment2
 ```
 
-Compression search uses the first visible GPU. Automatic multi-GPU device mapping applies to evaluation.
 
 ## Run Individual Steps
 
@@ -56,7 +55,6 @@ python -m squant zero-shot --model results/restored \
   --output results/zero-shot.json
 ```
 
-The default configuration is a starting point and does not guarantee the bit widths or accuracy reported in the paper. See [PAPER_MAPPING.md](docs/PAPER_MAPPING.md) for implementation assumptions.
 
 ## Citation
 
