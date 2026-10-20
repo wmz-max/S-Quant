@@ -80,7 +80,6 @@ def evaluate_hf(model_path, text_file=None, context_length=2048, stride=None,
 
 def zero_shot(model_path, tasks, device="cpu", limit=None, batch_size=1):
     import lm_eval
-    # Standard dense export is accepted directly by lm-evaluation-harness.
     return lm_eval.simple_evaluate(model="hf", model_args={"pretrained": str(model_path),
                                    "trust_remote_code": False}, tasks=list(tasks),
                                    device=device, num_fewshot=0, batch_size=batch_size, limit=limit,

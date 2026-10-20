@@ -1,4 +1,3 @@
-"""Integer golden models for the included functional RTL, not paper PPA."""
 import numpy as np
 from .lfsr import states
 

@@ -26,7 +26,6 @@ def candidate_seeds(config):
     count = 2**config.seed_bits - 1
     if config.seed_budget is None or config.seed_budget == count:
         return np.arange(1, count + 1, dtype=np.uint32)
-    # Explicitly approximate mode; reproducible and without replacement.
     rng = np.random.default_rng(config.random_seed)
     return np.sort(rng.choice(count, size=config.seed_budget, replace=False) + 1).astype(np.uint32)
 
